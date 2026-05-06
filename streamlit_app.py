@@ -1,6 +1,18 @@
-import streamlit as st
+from modules import api_handler
+from modules import data_processor 
+from modules import visualizer
+from modules import ui
+from test import test_app
+ 
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+# member11
+api_handler.run()
+# member2
+data_processor.run()
+# member3
+visualizer.run()
+# member4
+ui.run()
+test_app.run()
+
+
