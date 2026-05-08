@@ -1,18 +1,12 @@
-from modules import api_handler
-from modules import data_processor 
-from modules import visualizer
 from modules import ui
-from test import test_app
- 
+import streamlit as st
 
-# member11
-api_handler.run()
-# member2
-data_processor.run()
-# member3
-visualizer.run()
-# member4
+# Member 4 - Unified Streamlit UI
+st.set_page_config(
+    page_title="Stock Market App",
+    page_icon="📈",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 ui.run()
-test_app.run()
-
-
